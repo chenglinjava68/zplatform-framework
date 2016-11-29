@@ -8,7 +8,7 @@
  * Copyright (c) 2016,zlebank.All rights reserved.
  * 
  */
-package com.zlebank.zplatform.trade.enums;
+package com.zlebank.zplatform.framework.trade.enums;
 
 /**
  * Class Description

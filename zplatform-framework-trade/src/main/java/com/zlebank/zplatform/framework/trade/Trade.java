@@ -8,9 +8,10 @@
  * Copyright (c) 2016,zlebank.All rights reserved.
  * 
  */
-package com.zlebank.zplatform.trade;
+package com.zlebank.zplatform.framework.trade;
 
-import com.zlebank.zplatform.trade.bean.ResultBean;
+import com.zlebank.zplatform.framework.trade.bean.ResultBean;
+import com.zlebank.zplatform.framework.trade.bean.TradeBean;
 
 /**
  * Class Description
@@ -20,12 +21,12 @@ import com.zlebank.zplatform.trade.bean.ResultBean;
  * @date 2016年11月24日 下午2:16:15
  * @since 
  */
-public interface Trade<T> {
+public interface Trade {
 
 	/**
 	 * 交易支付
 	 * @param tradeBean 交易请求bean
 	 * @return 交易结果bean 
 	 */
-	public ResultBean pay(T tradeBean);
+	public ResultBean pay(TradeBean tradeBean);
 }

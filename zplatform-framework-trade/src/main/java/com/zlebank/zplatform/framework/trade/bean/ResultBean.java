@@ -8,7 +8,7 @@
  * Copyright (c) 2016,zlebank.All rights reserved.
  * 
  */
-package com.zlebank.zplatform.trade.bean;
+package com.zlebank.zplatform.framework.trade.bean;
 
 import java.io.Serializable;
 
@@ -26,6 +26,7 @@ public class ResultBean implements Serializable{
 	private String errMsg;
 	private boolean resultBool;
 	private Object resultObj;
+	private TradeBean tradeBean;
 	
 	public ResultBean(){
 		this.resultBool=false;
@@ -87,5 +88,12 @@ public class ResultBean implements Serializable{
 	public void setResultObj(Object resultObj) {
 		this.resultObj = resultObj;
 	}
+	public TradeBean getTradeBean() {
+		return tradeBean;
+	}
+	public void setTradeBean(TradeBean tradeBean) {
+		this.tradeBean = tradeBean;
+	}
+	
 }
 
